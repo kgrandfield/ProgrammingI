@@ -1,0 +1,21 @@
+#This program takes a user’s weekly income and then prints the user’s income, tax rate, and tax, using income brackets and tax rates stored in a dictionary.
+
+tax_rates = {"<500": .1, "500-1499": .15, "1500-2499": .2, ">2500": .3}
+
+weekly_income = int(input("Please enter your weekly income in dollars:\n"))
+
+if weekly_income < 500:
+    tax_withholding = weekly_income * tax_rates["<500"]
+    print("Results -- Income: $", weekly_income, "-- Tax Rate: ", tax_rates["<500"] * 100, "% -- Tax Withholding: $", tax_withholding)
+
+elif weekly_income < 1500:
+    tax_withholding = weekly_income * tax_rates["500-1499"]
+    print("Results -- Income: $", weekly_income, "-- Tax Rate: ", tax_rates["500-1499"] * 100, "% -- Tax Withholding: $", tax_withholding)
+
+elif weekly_income < 2500:
+    tax_withholding = weekly_income * tax_rates["1500-2499"]
+    print("Results -- Income: $", weekly_income, "-- Tax Rate: ", tax_rates["1500-2499"] * 100, "% -- Tax Withholding: $", tax_withholding)
+
+else:
+    tax_withholding = weekly_income * tax_rates[">2500"]
+    print("Results -- Income: $", weekly_income, "-- Tax Rate: ", tax_rates[">2500"] * 100, "% --Tax Withholding: $", tax_withholding)
