@@ -1,0 +1,20 @@
+#This program collects three strings from user input which feed into a function called “my_function” which returns the first two strings concatenated and the third strong in reverse order
+
+def my_function(a, b, c):
+    """ This function accepts as input three string values from a user,
+    returns a concatenation of the first two strings,
+    and prints the third string in reverse order
+    """
+    x = -1
+    while x >= (-1 * len(c)):
+        print(c[x], end=' ')
+        x -= 1
+    return a+' '+b
+
+def main():
+    A = str(input('Please enter your first string:'))
+    B = str(input('Please enter your second string:'))
+    C = str(input('Please enter your third string:'))
+    my_function(A, B, C)
+
+if __name__ == '__main__' : main()
