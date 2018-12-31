@@ -1,0 +1,20 @@
+my_car = {}
+
+print("Please enter the following information:\n")
+brand = input("Brand:\n")
+model = input("Model:\n")
+year = input("Year:\n")
+odometer_start = input("Starting odometer reading:\n")
+odometer_end = input("Ending odometer reading:\n")
+mpg = input("Miles per gallon consumed:\n")
+
+my_car["brand"] = brand
+my_car["model"] = model
+my_car["year"] = year
+my_car["starting odometer reading"] = odometer_start
+my_car["ending odometer reading"] = odometer_end
+my_car["miles per gallon"] = mpg
+
+print(" \n")
+print("You entered:\n")
+print(my_car)
