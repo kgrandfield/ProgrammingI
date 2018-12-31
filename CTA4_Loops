@@ -1,0 +1,36 @@
+#This program uses a loop to collect five floating-point numbers input by a user, then calculate the total, average, maximum, minimum, and 20% interest for each number.
+
+numbers = [0,0,0,0,0]
+
+numbers[0] = float(input("Please enter first number:\n"))
+
+for n in range(1, 4):
+    numbers[n] = float(input("Please enter next number:\n"))
+
+numbers[4] = float(input("Please enter last number:\n"))
+
+total = 0
+for x in numbers:
+    total += x
+
+average = total/len(numbers)
+
+maximum = numbers[0]
+for y in numbers:
+    if y > maximum:
+        maximum = y
+
+minimum = numbers[0]
+for z in numbers:
+    if z < minimum:
+        minimum = z 
+
+print("Total: ", total)
+print("Average: ", average)
+print("Maximum: ", maximum)
+print("Minimum: ", minimum)
+print("Interest at 20%: ")
+
+for i in numbers:
+    interest = i + i * .02
+    print(i, " - ", interest)
