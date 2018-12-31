@@ -1,0 +1,24 @@
+#This program takes two strings input by a user, converts them to lists, and returns the Cartesian product of the two lists.
+
+# Get user input for lists A and B
+
+A_input = input('A: Enter up to 10 numbers separated by spaces').split()
+B_input = input('B: Enter up to 10 numbers separated by space').split()
+
+# Convert to integars
+
+A = [int(x) for x in A_input]
+B = [int(x) for x in B_input]
+
+# Calculate and print Cartesian product of A and B
+
+C = []
+
+for b in range(len(B)):
+	i = b - 1
+	for a in range(len(A)):
+		j = a - 1
+		X = (A[j], B[i])
+		C.append(X)
+
+print('AxB =', C)
