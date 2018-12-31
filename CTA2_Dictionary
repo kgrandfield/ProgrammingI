@@ -1,3 +1,5 @@
+#This program collects from a user a car brand, model, year, starting odometer reading, ending odometer reading, and estimated miles per gallon consumed by the vehicle. The program stores this information in a dictionary called “my_car” and then prints the dictionary.
+
 my_car = {}
 
 print("Please enter the following information:\n")
